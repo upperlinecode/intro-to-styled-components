@@ -7,7 +7,6 @@ export const AppDiv = styled.div`
 export const RestaurantWrapper = styled.div`
   width: 95%;
   margin: 20px auto;
-  // background-color: slategrey;
   display: grid;
   grid-gap: 20px;
 `;

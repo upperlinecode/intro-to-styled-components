@@ -1,6 +1,5 @@
 import Hero from "../Hero/Hero";
 import RestaurantCard, { Tier } from "../RestaurantCard/RestaurantCard";
-import { AppDiv, RestaurantWrapper } from "./App.styles";
 import { restaurant_data } from "../../restaurant-data";
 
 const calculateTier = (rating: number): Tier => {
@@ -14,17 +13,17 @@ const calculateTier = (rating: number): Tier => {
 
 const App = () => {
   return (
-    <AppDiv>
+    <div className="AppDiv">
       <Hero />
-      <RestaurantWrapper>
+      <div className="RestaurantWrapper">
         {restaurant_data.map((restaurant) => (
           <RestaurantCard
             restaurant={restaurant}
             tier={calculateTier(restaurant.rating)}
           />
         ))}
-      </RestaurantWrapper>
-    </AppDiv>
+      </div>
+    </div>
   );
 };
 
