@@ -15,3 +15,5 @@ Styled Components strike a balance between several CSS concerns that are often i
 One solution is to be extremely defensive in your naming conventions, as with the [Block - Element - Modifier](http://getbem.com/) methodology. Another is to give every individual item in your React application a totally unique `className` property. Both of these approaches require quite a bit of wraparound work to ensure that all the teams working on CSS for a particular app are very tightly aligned on the conventions of that implementation.
 
 The styled components library allows us to control the cascade while still leveraging it when useful. Styled components also allow for some more elegant conditional rendering based on props without requiring additional CSS rulesets to be written.
+
+#
