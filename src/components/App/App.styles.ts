@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const AppDiv = styled.div`
+export const AppRoot = styled.div`
   font-family: "IBM Plex Sans", sans-serif;
 `;
 

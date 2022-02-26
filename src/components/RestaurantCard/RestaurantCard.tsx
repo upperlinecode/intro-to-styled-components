@@ -1,3 +1,5 @@
+import { Tier } from "../../types";
+
 interface Restaurant {
   category: string;
   companyName: string;
@@ -12,8 +14,6 @@ interface Restaurant {
   rating: number;
   reviewCount: number;
 }
-
-export type Tier = "bronze" | "silver" | "gold";
 
 const RestaurantCard = (props: { restaurant: Restaurant; tier: Tier }) => {
   const { companyName, streetAddress, city, category, website, rating } =

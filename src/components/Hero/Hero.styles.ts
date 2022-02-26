@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HeroDiv = styled.div`
+export const HeroRoot = styled.div`
   background-color: limegreen;
   padding: 20px;
   text-align: center;
