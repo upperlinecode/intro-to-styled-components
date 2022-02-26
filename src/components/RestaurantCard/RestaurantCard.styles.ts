@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { Tier } from "./RestaurantCard";
+import { Tier } from "../../types";
 
-export const RestaurantCardDiv = styled.div<{ tier: Tier }>`
+export const RestaurantCardRoot = styled.div<{ tier: Tier }>`
   background-color: ${({ tier }) => {
     switch (tier) {
       case "gold":

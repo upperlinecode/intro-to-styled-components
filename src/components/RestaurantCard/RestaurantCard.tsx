@@ -1,6 +1,7 @@
+import { Tier } from "../../types";
 import {
   CardBody,
-  RestaurantCardDiv,
+  RestaurantCardRoot,
   ImageContainer,
   CardDescription,
 } from "./RestaurantCard.styles";
@@ -20,14 +21,12 @@ interface Restaurant {
   reviewCount: number;
 }
 
-export type Tier = "bronze" | "silver" | "gold";
-
 const RestaurantCard = (props: { restaurant: Restaurant; tier: Tier }) => {
   const { companyName, streetAddress, city, category, website, rating } =
     props.restaurant;
 
   return (
-    <RestaurantCardDiv tier={props.tier}>
+    <RestaurantCardRoot tier={props.tier}>
       <ImageContainer>
         <img
           src="http://imageipsum.com/250x250"
@@ -55,7 +54,7 @@ const RestaurantCard = (props: { restaurant: Restaurant; tier: Tier }) => {
           {website && <a href={website}>Visit Website</a>}
         </div>
       </CardBody>
-    </RestaurantCardDiv>
+    </RestaurantCardRoot>
   );
 };
 
