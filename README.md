@@ -56,7 +56,7 @@ For now, ignore render all the cards a single color. We'll worry about adding in
 
 ### 4. Pass the `tier` as a property to the `RestaurantCardDiv` and style conditionally.
 
-A "gold" tier restaurant should have a gold card, a "silver" should have a silver card, and a bronze should have a "bronze" card. You can possibly use `goldenrod`, `silver`, and `peru`.
+A "gold" tier restaurant should have a gold card, a "silver" should have a silver card, and a bronze should have a "bronze" card. Take a look in the `utils.ts` file for some possible colors
 
 In order for this to work, you'll need to pass a prop to the styled component, [as modeled in the documentation](https://styled-components.com/docs/basics#passed-props).
 
