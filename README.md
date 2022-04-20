@@ -25,7 +25,7 @@ You're making a page to display, in brief, some of your favorite restaurants - e
 
 ### 0. Study the App.
 
-In its current state, the app is already fully functional - the point of this exercise isn't to re-learn how to write a React app with Typescript, but this may be a helpful refresher. Take a moment to examine the types and interfaces that are already established in the `RestaurantCard` component.
+In its current state, the app is already fully functional - the point of this exercise isn't to re-learn how to write a React app with TypeScript, but this may be a helpful refresher. Take a moment to examine the types and interfaces that are already established in the `RestaurantCard` component.
 
 Consider especially the pieces of the Restaurant interface that may or may not exist like the "website" property - notice that they're handled conditionally within the body of the card.
 
@@ -56,7 +56,7 @@ For now, ignore render all the cards a single color. We'll worry about adding in
 
 ### 4. Pass the `tier` as a property to the `RestaurantCardDiv` and style conditionally.
 
-A "gold" tier restaurant should have a gold card, a "silver" should have a silver card, and a bronze should have a "bronze" card.
+A "gold" tier restaurant should have a gold card, a "silver" should have a silver card, and a bronze should have a "bronze" card. Take a look in the `utils.ts` file for some possible colors
 
 In order for this to work, you'll need to pass a prop to the styled component, [as modeled in the documentation](https://styled-components.com/docs/basics#passed-props).
 

@@ -5,7 +5,7 @@ import { calculateTier } from "../../utils";
 
 const App = () => {
   return (
-    <div className="AppDiv">
+    <div className="AppRoot">
       <Hero />
       <div className="RestaurantWrapper">
         {restaurant_data.map((restaurant) => (
