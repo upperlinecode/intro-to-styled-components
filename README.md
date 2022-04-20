@@ -61,3 +61,11 @@ A "gold" tier restaurant should have a gold card, a "silver" should have a silve
 In order for this to work, you'll need to pass a prop to the styled component, [as modeled in the documentation](https://styled-components.com/docs/basics#passed-props).
 
 You'll also need to be aware that TypeScript presents some additional [requirements for passed properties](https://styled-components.com/docs/api#using-custom-props).
+
+## Extensions
+
+1. Add a [hover effect](https://styled-components.com/docs/basics#pseudoelements-pseudoselectors-and-nesting) to your existing code. Bonus points if you can ensure an engaging but snappy [transition](https://www.joshwcomeau.com/animation/css-transitions/).
+
+2. Extend a few of the styled components to create a special type of card - a FeaturedRestaurant for the highest rated restaurant. It should have a visual indication other than color so that it isn't misconstrued as something other than gold tier - if you're ambitious, a [corner ribbon](https://stackoverflow.com/questions/30503866/right-corner-ribbon-on-a-div-css) with a `#1` on it would be awesome, but any visual indicator you think would be best can work. You'll want to write the code to identify the highest rated restaurant at the `App` level, and you'll need to [extend the base card styled components](https://styled-components.com/docs/basics#extending-styles) to make the best use of the work you've already done.
+
+3. With styled components, selecting a child element or component can be done by simply [nesting a CSS ruleset](https://styled-components.com/docs/faqs#can-i-nest-rules) inside another. This is intuitive if you've used Sass before, and you can also [nest rules for styled components themselves](https://styled-components.com/docs/advanced#referring-to-other-components). Refactor a child styled component to be explicitly styled in relation to its parent component, as in the linked documentation.
