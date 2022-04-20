@@ -41,7 +41,7 @@ There's currently no `RestaurantCard.styles.ts` file - you'll need to create one
 
 Then, refactor all the elements which currently have the following class names into styled components:
 
-- RestaurantCardDiv
+- RestaurantCardRoot
 - ImageContainer
 - CardBody
 - CardDescription
@@ -54,7 +54,7 @@ For now, ignore render all the cards a single color. We'll worry about adding in
 
 ![Preview of restaurant cards](public/preview.png)
 
-### 4. Pass the `tier` as a property to the `RestaurantCardDiv` and style conditionally.
+### 4. Pass the `tier` as a property to the `RestaurantCardRoot` and style conditionally.
 
 A "gold" tier restaurant should have a gold card, a "silver" should have a silver card, and a bronze should have a "bronze" card. Take a look in the `utils.ts` file for some possible colors
 
