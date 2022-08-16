@@ -29,7 +29,7 @@ In its current state, the app is already fully functional - the point of this ex
 
 Consider especially the pieces of the Restaurant interface that may or may not exist like the "website" property - notice that they're handled conditionally within the body of the card.
 
-Be sure to study the `Hero` component carefully - it has already been configured to use style
+Be sure to study the `Hero` component carefully - it has already been configured to use styled components.
 
 ### 1. Replace the `div`s in `App.tsx` with styled components.
 
@@ -46,11 +46,11 @@ Then, refactor all the elements which currently have the following class names i
 - CardBody
 - CardDescription
 
-Match the conventions in the other two `styles.ts` documents, and reference the [documentation](https://styled-components.com/docs) as necessary.
+Match the conventions in the `App.styles.ts` document, and reference the [documentation](https://styled-components.com/docs) as necessary.
 
 ### 3. Write CSS rules to make cards that look like the example below.
 
-For now, ignore render all the cards a single color. We'll worry about adding in gold, silver, and bronze later.
+For now, allow all the cards to render in a single color. We'll worry about adding in gold, silver, and bronze backgrounds later. Colors aside, add the CSS necessary to match this preview:
 
 ![Preview of restaurant cards](public/preview.png)
 

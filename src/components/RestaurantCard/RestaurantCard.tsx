@@ -20,7 +20,7 @@ const RestaurantCard = (props: { restaurant: Restaurant; tier: Tier }) => {
     props.restaurant;
 
   return (
-    <div className="RestaurantCardDiv">
+    <div className="RestaurantCardRoot">
       <div className="ImageContainer">
         <img
           src="http://imageipsum.com/250x250"
